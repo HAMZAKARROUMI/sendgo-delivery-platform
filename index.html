@@ -10,67 +10,53 @@
 </head>
 <body>
     <!-- Header Navigation -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content" style="position:relative;">
-                <!-- Logo and Brand Name (far left) -->
-                <div class="logo" style="justify-content:flex-start;">
-                    <i class="fas fa-shipping-fast"></i>
-                    <span class="brand-name" style="color:#8338ec;">SendGo</span>
-                </div>
-                <!-- Navigation Menu (centered) -->
-                <nav class="nav-menu" style="position:absolute; left:50%; transform:translateX(-50%);">
-                    <ul class="nav-list">
-                        <li><a href="#about">A propos de nous</a></li>
-                        <li><a href="#services">Nos services</a></li>
-                        <li><a href="#pricing">Tarifs</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#advantages">Avantages</a></li>
-                        <li><a href="#become-client">Devenir client</a></li>
-                        <li><a href="#client-area">Espace client</a></li>
-                    </ul>
-                </nav>
-                <!-- Language Selector (top-right) -->
-                <div class="language-selector" aria-label="Language selector">
-                    <button class="lang-btn active" data-lang="fr">
-                        <span class="flag">🇫🇷</span>
-                        <span class="lang-text">FR</span>
-                    </button>
-                    <button class="lang-btn" data-lang="en">
-                        <span class="flag">🇺🇸</span>
-                        <span class="lang-text">EN</span>
-                    </button>
-                    <button class="lang-btn" data-lang="ar">
-                        <span class="flag">🇸🇦</span>
-                        <span class="lang-text">AR</span>
-                    </button>
-                </div>
-                <!-- Mobile Menu Toggle -->
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">SendGo</div>
+        
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <ul class="nav-links">
+          <li><a href="#about">A propos de nous</a></li>
+          <li><a href="#services">Nos services</a></li>
+          <li><a href="#pricing">Tarifs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#advantages">Avantages</a></li>
+          <li><a href="#become-client">Devenir client</a></li>
+          <li><a href="#client-space">Espace client</a></li>
+        </ul>
+
+        <div class="language-switcher">
+          <button>🇫🇷 FR</button>
+          <button>🇺🇸 EN</button>
+          <button>🇸🇦 AR</button>
         </div>
+      </nav>
     </header>
 
     <!-- Hero Banner Section -->
     <section class="hero-banner">
         <div class="banner-content">
-            <div class="banner-image">
-                <div class="delivery-truck">
-                    <i class="fas fa-truck"></i>
-                    <div class="truck-logo">SendGo</div>
+            <div class="hero-icons-row">
+                <div class="hero-icon-card">
+                    <div class="delivery-truck">
+                        <i class="fas fa-truck"></i>
+                        <div class="truck-logo">SendGo</div>
+                    </div>
                 </div>
-                <div class="delivery-man">
-                    <div class="man-avatar">
-                        <i class="fas fa-user"></i>
+                <div class="hero-icon-card">
+                    <div class="delivery-man">
+                        <div class="man-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="man-uniform">
+                            <div class="shirt-logo">SendGo</div>
+                        </div>
+                        <div class="man-hat">SG</div>
                     </div>
-                    <div class="man-uniform">
-                        <div class="shirt-logo">SendGo</div>
-                    </div>
-                    <div class="man-hat" style="background:#8338ec; color:#fff; border-radius:50%; width:40px; height:20px; display:flex; align-items:center; justify-content:center; margin:0 auto 8px auto; font-size:0.9rem; font-weight:700;">SG</div>
+                </div>
+                <div class="hero-icon-card">
                     <div class="package">
                         <i class="fas fa-box"></i>
                         <div class="package-logo">SendGo</div>
