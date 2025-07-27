@@ -1,166 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SendGo - Service de Livraison E-commerce</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SendGo - Livraison E-commerce</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">SendGo</div>
-        
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        
-        <ul class="nav-links">
-          <li><a href="#about">A propos de nous</a></li>
-          <li><a href="#services">Nos services</a></li>
-          <li><a href="#pricing">Tarifs</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#advantages">Avantages</a></li>
-          <li><a href="#become-client">Devenir client</a></li>
-          <li><a href="#client-space">Espace client</a></li>
-        </ul>
+  <nav class="navbar">
+    <div class="logo">SendGo</div>
+    <ul class="nav-links">
+      <li><a href="#about">A propos de nous</a></li>
+      <li><a href="#services">Nos services</a></li>
+      <li><a href="#pricing">Tarifs</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#advantages">Avantages</a></li>
+      <li><a href="#become-client">Devenir client</a></li>
+      <li><a href="#client-space">Espace client</a></li>
+    </ul>
+  </nav>
 
-        <div class="language-switcher">
-          <button>🇫🇷 FR</button>
-          <button>🇺🇸 EN</button>
-          <button>🇸🇦 AR</button>
-        </div>
-      </nav>
-    </header>
+  <section class="hero">
+    <h1>Livraison Rapide et Fiable</h1>
+    <p>Votre partenaire de confiance pour tous vos besoins de livraison e-commerce</p>
+    <a href="#become-client" class="btn-primary">Devenir client</a>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Livraison Rapide et Fiable</h1>
-      <p>Votre partenaire de confiance pour tous vos besoins de livraison e-commerce</p>
-      <a href="#become-client" class="btn-primary">Devenir client</a>
-    </section>
+  <section class="tracking">
+    <h2>Suivi de commande</h2>
+    <form>
+      <input type="text" placeholder="Numéro de suivi...">
+      <button type="submit">Suivre</button>
+    </form>
+  </section>
 
-    <!-- Search Section -->
-    <section class="search-section">
-        <div class="container">
-            <div class="search-content">
-                <h2 class="search-title">Suivez votre commande</h2>
-                <p class="search-subtitle">Veuillez utiliser ce formulaire pour suivre votre commande manuellement.</p>
-                <div class="search-form">
-                    <div class="search-input-group">
-                        <input type="text" id="tracking-number" placeholder="Numéro de suivi..." class="search-input">
-                        <button type="button" id="track-btn" class="search-btn">
-                            <i class="fas fa-search"></i>
-                            <span>Suivre</span>
-                        </button>
-                    </div>
-                </div>
-                <!-- Tracking Results -->
-                <div id="tracking-results" class="tracking-results" style="display: none;">
-                    <div class="result-card">
-                        <div class="result-header">
-                            <h3>Résultat du suivi</h3>
-                            <span class="tracking-number-display"></span>
-                        </div>
-                        <div class="status-indicator">
-                            <div class="status-icon">
-                                <i class="fas fa-truck"></i>
-                            </div>
-                            <div class="status-info">
-                                <span class="status-text">En cours de livraison</span>
-                                <span class="status-date">28/06/2025 - 14:30</span>
-                            </div>
-                        </div>
-                        <div class="delivery-progress">
-                            <div class="progress-step completed">
-                                <div class="step-icon"><i class="fas fa-check"></i></div>
-                                <span>Commande reçue</span>
-                            </div>
-                            <div class="progress-step completed">
-                                <div class="step-icon"><i class="fas fa-check"></i></div>
-                                <span>En préparation</span>
-                            </div>
-                            <div class="progress-step active">
-                                <div class="step-icon"><i class="fas fa-truck"></i></div>
-                                <span>En cours de livraison</span>
-                            </div>
-                            <div class="progress-step">
-                                <div class="step-icon"><i class="fas fa-home"></i></div>
-                                <span>Livré</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="features">
+    <div class="feature">
+      <img src="img/fast.svg" alt="Livraison rapide">
+      <h3>Livraison rapide</h3>
+      <p>24-48h partout au Maroc</p>
+    </div>
+    <div class="feature">
+      <img src="img/secure.svg" alt="Sécurisé">
+      <h3>Sécurisé</h3>
+      <p>Colis assurés et suivis</p>
+    </div>
+    <div class="feature">
+      <img src="img/support.svg" alt="Support 24/7">
+      <h3>Support 24/7</h3>
+      <p>Équipe à votre écoute</p>
+    </div>
+  </section>
 
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="container">
-            <h2 class="section-title" data-fr="Pourquoi choisir SendGo ?" data-en="Why choose SendGo?" data-ar="لماذا تختار SendGo؟">
-                Pourquoi choisir SendGo ?
-            </h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3 data-fr="Livraison Rapide" data-en="Fast Delivery" data-ar="توصيل سريع">Livraison Rapide</h3>
-                    <p data-fr="Livraison en 24-48h dans tout le Maroc" data-en="24-48h delivery across Morocco" data-ar="توصيل خلال 24-48 ساعة في جميع أنحاء المغرب">
-                        Livraison en 24-48h dans tout le Maroc
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 data-fr="Sécurisé" data-en="Secure" data-ar="آمن">Sécurisé</h3>
-                    <p data-fr="Vos colis sont assurés et suivis en temps réel" data-en="Your packages are insured and tracked in real-time" data-ar="طرودك مؤمنة ومتتبعة في الوقت الفعلي">
-                        Vos colis sont assurés et suivis en temps réel
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 data-fr="Support 24/7" data-en="24/7 Support" data-ar="دعم 24/7">Support 24/7</h3>
-                    <p data-fr="Notre équipe est disponible pour vous aider" data-en="Our team is available to help you" data-ar="فريقنا متاح لمساعدتك">
-                        Notre équipe est disponible pour vous aider
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-shipping-fast"></i>
-                        <span>SendGo</span>
-                    </div>
-                    <p data-fr="Votre partenaire de confiance pour la livraison e-commerce" data-en="Your trusted partner for e-commerce delivery" data-ar="شريكك الموثوق لتوصيل التجارة الإلكترونية">
-                        Votre partenaire de confiance pour la livraison e-commerce
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h4 data-fr="Contact" data-en="Contact" data-ar="اتصل بنا">Contact</h4>
-                    <p>www.sendgo.ma</p>
-                    <p>contact@sendgo.ma</p>
-                    <p>+212 5XX XX XX XX</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 SendGo. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    &copy; 2025 SendGo. Tous droits réservés.
+  </footer>
 </body>
 </html> 
